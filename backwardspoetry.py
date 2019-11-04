@@ -1,4 +1,5 @@
 # print("hello world")
+import random
 
 poem = """I like potatoes
 They are interesting
@@ -25,11 +26,11 @@ def lines_printed_backwards(fragments, length_of_list):
 
 
 def lines_printed_random(fragments, length_of_list):
-    fragments.reverse()                        # split_poem is reversed
-    print(fragments)
     iterator = length_of_list
     while iterator > 0:
-        print()
+        print(fragments[random.randint(0,3)])
+        iterator -= 1
 
 
-lines_printed_backwards(split_poem, length_list)
+#lines_printed_backwards(split_poem, length_list)
+lines_printed_random(split_poem,length_list)
