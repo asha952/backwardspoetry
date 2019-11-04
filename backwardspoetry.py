@@ -22,7 +22,9 @@ def lines_printed_backwards(fragments, length_of_list):
     print(fragments)
     iterator = length_of_list
     for lines in fragments:
-        print("{} {}".format(length_of_list, lines))
+        iterator
+        print("{} {}".format(iterator, lines))
+
 
 
 lines_printed_backwards(split_poem, length_list)
