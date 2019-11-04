@@ -18,13 +18,18 @@ length_list = len(split_poem)
 
 
 def lines_printed_backwards(fragments, length_of_list):
+    iterator = length_of_list
+    while iterator > 0:
+        print("{} {}".format(iterator, fragments[iterator-1]))
+        iterator -= 1
+
+
+def lines_printed_random(fragments, length_of_list):
     fragments.reverse()                        # split_poem is reversed
     print(fragments)
     iterator = length_of_list
-    for lines in fragments:
-        iterator
-        print("{} {}".format(iterator, lines))
-
+    while iterator > 0:
+        print()
 
 
 lines_printed_backwards(split_poem, length_list)
