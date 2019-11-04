@@ -32,5 +32,11 @@ def lines_printed_random(fragments, length_of_list):
         iterator -= 1
 
 
-#lines_printed_backwards(split_poem, length_list)
-lines_printed_random(split_poem,length_list)
+def random_crazy(fragments):    #swaps case
+    for lines in fragments:
+        print(lines.swapcase())
+
+
+lines_printed_backwards(split_poem, length_list)
+lines_printed_random(split_poem, length_list)
+random_crazy(split_poem)
