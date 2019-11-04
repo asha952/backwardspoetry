@@ -1,6 +1,6 @@
 # print("hello world")
 
-poem = """ I like potatoes
+poem = """I like potatoes
 They are interesting
 Also they are versatile
 You can make fries
@@ -17,14 +17,12 @@ split_poem = poem.split('\n')
 length_list = len(split_poem)
 
 
-def lines_printed_backwards(fragments):
-    a = []
-    for lines in reversed(split_poem):
-        # i = length_list
-        a.append(lines)
-        while number > 0:
-            print(number + a)
-            number = number - 1
+def lines_printed_backwards(fragments, length_of_list):
+    fragments.reverse()                        # split_poem is reversed
+    print(fragments)
+    iterator = length_of_list
+    for lines in fragments:
+        print("{} {}".format(length_of_list, lines))
 
 
-lines_printed_backwards(split_poem)
+lines_printed_backwards(split_poem, length_list)
